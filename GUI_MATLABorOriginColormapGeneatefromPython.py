@@ -2,7 +2,6 @@
 ===============
 The python files for generating the MATLAB or Origin colormap files.
 This program is a python version of the MATLAB function "cmap2pal" on file exchange
-This program also 
 ===============
 
 """
@@ -100,7 +99,7 @@ explanation = """Author: Zhaohua Tian
 Email: knifelees3@gmail.com
 Web: knifelees3@github.io
 This program generates the Origin or MATLAB used colormap files from python. You can
- preview the colormaps and then export the corlormap into files with extension or 
+ preview the colormaps and then export the corlormap into files with extension of
   '.pal' (Origin format) or '.txt' (MATLAB format), The files are saved on the same
 path of the program. 
 Posted on: 2021-07-24"""
