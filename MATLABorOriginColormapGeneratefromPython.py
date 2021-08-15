@@ -41,6 +41,6 @@ def save_files(val_cho,cmap_name):
 #var_cho=1: MATLAB
 #var_cho=2: Origin
 
-var_cho=1
+var_cho=2
 cmap_name='jet'
-save_files(val_cho,cmap_name)
+save_files(1,cmap_name)

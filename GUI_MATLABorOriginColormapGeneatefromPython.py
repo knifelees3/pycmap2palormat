@@ -64,7 +64,7 @@ def save_files():
         cmap_fun=cm.get_cmap(cmap_name,256)
         cmap_use=cmap_fun(np.linspace(0,1,256))
         cmap_save=cmap_use[:,0:3]
-        file_name='MATLABColormap_'+cmap_name+'_exportedfromPython.txt'
+        file_name=cmap_name+'.txt'
         np.savetxt(file_name,cmap_save)
         lbl_res.configure(text='Colormap files for MATLAB has been generated! ')
     if val_cho==2:
@@ -76,7 +76,7 @@ def save_files():
         hlen=24;							# Header length
         flen=hlen+(4*depth)
         # make file
-        filename='OriginColormap_'+cmap_name+'_exportedfromPython.pal'
+        filename=cmap_name+'.pal'
         newFile = open(filename, "wb")
         # write to file
         # newFile.write(newFileBytes)
@@ -102,6 +102,7 @@ This program generates the Origin or MATLAB used colormap files from python. You
  preview the colormaps and then export the corlormap into files with extension of
   '.pal' (Origin format) or '.txt' (MATLAB format), The files are saved on the same
 path of the program. 
+The default folder of origin (orgin 2016 for example) pal files should be  C:\\Program Files\\OriginLab\\Origin2016\\Palettes\\ 
 Posted on: 2021-07-24"""
 lbl_1 = Label(window, text=explanation)
 lbl_1.pack(side=tkinter.TOP, fill=tkinter.BOTH, expand=1)
